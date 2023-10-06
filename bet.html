@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casino Bet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+  <body class="md:overflow-y-hidden">
+    <div class="md:h-screen flex flex-col">
+      <div class="h-14 shadow flex justify-between items-center bg-white">
+        <div>
+          <h1 class="text-2xl p-4">Casino BET</h1>
+        </div>
+        <div>
+          <ul class="pr-3">
+            <li class="inline-block">
+              <a href="index.html" class="px-3 text-center block">
+                <i class="fa fa-home" aria-hidden="true"></i> <br />
+                Home</a
+              >
+            </li>
+            <li class="inline-block">
+              <a href="bet.html" class="px-3 text-center block">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i><br />
+                Bet</a
+              >
+            </li>
+            <li class="inline-block">
+              <a href="lottary.html" class="px-3 text-center block">
+                <i class="fa fa-money" aria-hidden="true"></i><br />
+                Lottary</a
+              >
+            </li>
+            <li class="inline-block">
+              <a href="" class="px-3 text-center block">
+                <i class="fa fa-users" aria-hidden="true"></i><br />
+                Community</a
+              >
+            </li>
+            <li class="inline-block">
+              <ul>
+                <li>Profile</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-1 h-full pb-8">
+        <div class="w-96 border-r md:overflow-y-scroll md:h-full">
+          <div class="p-2">
+            <h1 class="text-xl pb-2">Make Prediction</h1>
+            <input
+              type="text"
+              class="border rounded outline-0 w-full p-2 px-5"
+              placeholder="Search..."
+            />
+
+            <p class="pt-5">Categories</p>
+            <ul class="m-0">
+              <li>
+                <a
+                  href=""
+                  class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+                  ><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i> Bet List</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+                  ><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i> Best Bet</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-1 overflow-y-scroll">
+          <div class="p-2">
+            <h1 class="text-xl pb-2">Today's Picks</h1>
+
+            <div class="shadow border">
+              <div class="w-64 p-2">
+                <img
+                  src="https://scontent.fdac157-1.fna.fbcdn.net/v/t39.2081-6/341668366_565994945622435_5945597795951187762_n.jpg?stp=dst-jpg_p600x313&_nc_cat=1&ccb=1-7&_nc_sid=e26652&_nc_eui2=AeGhOsEeICj0aYD4oJZqeR8ASgjxGmUG9ERKCPEaZQb0RAEJeyDWnylns2pUXBZkad3IFAiIie2Gw-uN-gUcnqq7&_nc_ohc=9e_mMTNFcMkAX8VM_C1&_nc_ht=scontent.fdac157-1.fna&oh=00_AfDkEJulCRInFdHx1Yax2C9UTfssC-RLtO3qe7NYjpWl1g&oe=65246EB9"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1 p-2">
+                Bet Ends In
+                <p id="demo" class="text-2xl"></p>
+                <hr />
+                <script>
+                  // Set the date we're counting down to
+                  var countDownDate = new Date('Dec 5, 2023 15:37:25').getTime();
+
+                  // Update the count down every 1 second
+                  var x = setInterval(function () {
+                    // Get today's date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Output the result in an element with id="demo"
+                    document.getElementById('demo').innerHTML =
+                      days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
+
+                    // If the count down is over, write some text
+                    if (distance < 0) {
+                      clearInterval(x);
+                      document.getElementById('demo').innerHTML = 'EXPIRED';
+                    }
+                  }, 1000);
+                </script>
+                <div>
+                  <h3>What Will Be In over 6 and boll no 3</h3>
+                  <p>BET PRICE - 20 Taka</p>
+                </div>
+                <ul>
+                  <li class="inline-block p-2 border mr-2 rounded">
+                    Option A <br />
+                    Bet - 203 <br />
+                    Joy Price - 23 Taka <br />
+                    Luse Price - 18 Taka <br />
+                  </li>
+                  <li class="inline-block p-2 border mr-2 rounded">
+                    Option B <br />
+                    Bet - 203 <br />
+                    Joy Price - 23 Taka <br />
+                    Luse Price - 18 Taka <br />
+                  </li>
+                  <li class="inline-block p-2 border mr-2 rounded">
+                    Option C <br />
+                    Bet - 203 <br />
+                    Joy Price - 23 Taka <br />
+                    Luse Price - 18 Taka <br />
+                  </li>
+                  <li class="inline-block p-2 border mr-2 rounded">
+                    Option D <br />
+                    Bet - 203 <br />
+                    Joy Price - 23 Taka <br />
+                    Luse Price - 18 Taka <br />
+                  </li>
+                  <li class="inline-block p-2 border mr-2 rounded">
+                    Option E <br />
+                    Bet - 203 <br />
+                    Joy Price - 23 Taka <br />
+                    Luse Price - 18 Taka <br />
+                  </li>
+                </ul>
+                <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+
+                <script>
+                  const xValues = ['Italy', 'France', 'Spain', 'USA', 'Argentina'];
+                  const yValues = [55, 49, 44, 24, 15];
+                  const barColors = ['red', 'green', 'blue', 'orange', 'brown'];
+
+                  new Chart('myChart', {
+                    type: 'bar',
+                    data: {
+                      labels: xValues,
+                      datasets: [
+                        {
+                          backgroundColor: barColors,
+                          data: yValues
+                        }
+                      ]
+                    },
+                    options: {
+                      legend: { display: false },
+                      title: {
+                        display: true,
+                        text: 'World Wine Production 2018'
+                      }
+                    }
+                  });
+                </script>
+                <div>
+                  <p>Your bet</p>
+
+                  <p>You Will Bet For 100</p>
+                  <p>Your Luse percentage 5%</p>
+                  <p>if you lose you will get 95</p>
+                  <p>Your Luse percentage 10%</p>
+                  <p>if you win you will get 110</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
