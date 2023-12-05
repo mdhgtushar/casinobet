@@ -15,7 +15,9 @@
     <div class="md:h-screen flex flex-col">
       <div>
         <div class="border-b border-t-0 bg-gray-100 md:bg-white">
-          <section class="container flex justify-between items-center mx-auto py-2">
+          <section
+            class="container flex justify-between items-center mx-auto py-2"
+          >
             <div class="flex items-center justify-between">
               <a href="/"
                 ><div class="flex items-center">
@@ -72,7 +74,7 @@
                 /><a class="text-sm" href="success_stories.html"
                   ><span>Success Stories</span></a
                 >
-              </div>
+              </div> 
             </div>
           </section>
         </div>
@@ -101,31 +103,31 @@
                   class="px-5 py-1 hover:text-gray-400 bg-gray-300 text-gray-500 mr-1"
                   href="success_stories.html"
                   >Success Stories</a
-                >
+                > 
                 <a
                   class="px-5 py-1 hover:text-gray-400 bg-gray-300 text-gray-500 mr-1"
                   href="/notice"
                   >Tutorial</a
-                >
+                > 
               </li>
               <li>
+                
                 <a
                   class="px-5 py-1 hover:text-gray-400 bg-gray-300 text-gray-500 mr-1"
                   href=""
                   >Login</a
-                >
-
+                > 
+                
                 <a
                   class="px-5 py-1 hover:text-gray-400 bg-gray-300 text-gray-500 mr-1"
                   href=""
                   >Register</a
-                >
+                > 
               </li>
             </ul>
           </div>
         </div>
       </div>
-
       <div class="container mx-auto">
         <div class="p-2">
           <h1 class="text-xl pb-2">Today's Picks</h1>
@@ -139,88 +141,113 @@
             </div>
             <div class="flex-1 p-2">
               Bet Ends In
-              <p id="demo" class="text-2xl">Loading...</p>
+              <p id="demo" class="text-2xl"></p>
               <hr />
+              <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date('Dec 5, 2023 15:37:25').getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function () {
+                  // Get today's date and time
+                  var now = new Date().getTime();
+
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                  // Output the result in an element with id="demo"
+                  document.getElementById('demo').innerHTML =
+                    days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
+
+                  // If the count down is over, write some text
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById('demo').innerHTML = 'EXPIRED';
+                  }
+                }, 1000);
+              </script>
               <div>
-                <p class="text-2xl">LOTTARY PRICE - 20 Taka</p>
+                <h3>What Will Be In over 6 and boll no 3</h3>
+                <p>BET PRICE - 20 Taka</p>
               </div>
               <ul>
                 <li class="inline-block p-2 border mr-2 rounded">
-                  Win 50 Taka
-                  <br />
-                  Titket Number:
-                  <input type="number" />
-                </li>
-
-                <li class="inline-block p-2 border mr-2 rounded">
-                  Win 100 Taka
-                  <br />
-                  Titket Number:
-                  <input type="number" />
-                </li>
-
-                <li class="inline-block p-2 border mr-2 rounded">
-                  Win 200 Taka
-                  <br />
-                  Titket Number:
-                  <input type="number" />
-                </li>
-
-                <li class="inline-block p-2 border mr-2 rounded">
-                  Win 500 Taka
-                  <br />
-                  Titket Number:
-                  <input type="number" />
-                </li>
-
-                <li class="inline-block p-2 border mr-2 rounded">
-                  Win 1000 Taka
-                  <br />
-                  Titket Number:
-                  <input type="number" />
+                  Option A <br />
+                  Bet - 203 <br />
+                  Joy Price - 23 Taka <br />
+                  Luse Price - 18 Taka <br />
                 </li>
                 <li class="inline-block p-2 border mr-2 rounded">
-                  Win 800 Taka
-                  <br />
-                  Titket Number:
-                  <input type="number" />
+                  Option B <br />
+                  Bet - 203 <br />
+                  Joy Price - 23 Taka <br />
+                  Luse Price - 18 Taka <br />
+                </li>
+                <li class="inline-block p-2 border mr-2 rounded">
+                  Option C <br />
+                  Bet - 203 <br />
+                  Joy Price - 23 Taka <br />
+                  Luse Price - 18 Taka <br />
+                </li>
+                <li class="inline-block p-2 border mr-2 rounded">
+                  Option D <br />
+                  Bet - 203 <br />
+                  Joy Price - 23 Taka <br />
+                  Luse Price - 18 Taka <br />
+                </li>
+                <li class="inline-block p-2 border mr-2 rounded">
+                  Option E <br />
+                  Bet - 203 <br />
+                  Joy Price - 23 Taka <br />
+                  Luse Price - 18 Taka <br />
                 </li>
               </ul>
+              <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+
+              <script>
+                const xValues = ['Italy', 'France', 'Spain', 'USA', 'Argentina'];
+                const yValues = [55, 49, 44, 24, 15];
+                const barColors = ['red', 'green', 'blue', 'orange', 'brown'];
+
+                new Chart('myChart', {
+                  type: 'bar',
+                  data: {
+                    labels: xValues,
+                    datasets: [
+                      {
+                        backgroundColor: barColors,
+                        data: yValues
+                      }
+                    ]
+                  },
+                  options: {
+                    legend: { display: false },
+                    title: {
+                      display: true,
+                      text: 'World Wine Production 2018'
+                    }
+                  }
+                });
+              </script>
+              <div>
+                <p>Your bet</p>
+
+                <p>You Will Bet For 100</p>
+                <p>Your Luse percentage 5%</p>
+                <p>if you lose you will get 95</p>
+                <p>Your Luse percentage 10%</p>
+                <p>if you win you will get 110</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Oct 7, 2023 15:37:25").getTime();
-
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML =
-          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-    </script>
   </body>
 </html>
